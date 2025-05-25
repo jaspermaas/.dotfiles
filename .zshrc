@@ -20,6 +20,9 @@ if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
 	builtin source ${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration
 fi
 
+# Default Editor
+export EDITOR=nano
+
 # Oh-My-Posh
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
