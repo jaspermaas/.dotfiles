@@ -1,13 +1,12 @@
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/jaspermaas/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-# End of Docker CLI completions
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Jenv Loading
+
+export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 # Pyenv Loading
@@ -26,5 +25,3 @@ export EDITOR=nano
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/theme.toml)"
 
-# Amazon Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
