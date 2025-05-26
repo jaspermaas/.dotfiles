@@ -16,7 +16,15 @@ cd ~
 git clone https://www.github,com/jaspermaas/dotfiles
 ```
 
-Then install homebrew
+Then install `homebrew`
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+and `stow`
+```sh
+brew install stow
+```
+In the repository execute:
+```sh
+stow .
 ```
