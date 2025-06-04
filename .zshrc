@@ -26,5 +26,9 @@ export EDITOR=nano
 # Oh-My-Posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/theme.toml)"
 
+# Enable history search with arrow keys
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
