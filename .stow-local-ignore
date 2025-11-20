@@ -2,3 +2,5 @@ README.md
 .git
 scripts
 .gitignore
+.DS_Store
+.vscode-setting.json
