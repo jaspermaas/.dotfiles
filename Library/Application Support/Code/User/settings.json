@@ -1,0 +1,92 @@
+{
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.wordWrap": "on"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false
+  },
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "breadcrumbs.enabled": false,
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 16,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.suggestSelection": "first",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false
+  },
+  "jupyter.askForKernelRestart": false,
+  "latex-workshop.bibtex-fields.order": ["author", "year", "month", "title"],
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bibtex-format.sortby": ["author", "year", "month", "title"],
+  "latex-workshop.bibtex.maxFileSize": 10,
+  "latex-workshop.latex.autoBuild.interval": 500,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.build.forceRecipeUsage": false,
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.synctex(busy)",
+    "*.synctex.gz(busy)",
+    "*.nav",
+    "*.vrb",
+    "*.synctex.gz",
+    "*.aux",
+    "*.toc"
+  ],
+  "redhat.telemetry.enabled": false,
+  "sql-formatter.uppercase": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.indent": 25,
+  "editor.stickyScroll.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.fontSize": 15
+}
