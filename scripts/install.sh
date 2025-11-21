@@ -119,6 +119,7 @@ VSCODE_EXTENSIONS=(
     "eamodio.gitlens"
     "james-yu.latex-workshop"
     "esbenp.prettier-vscode"
+    "ms-python.autopep8"
 )
 
 for EXTENSION in "${VSCODE_EXTENSIONS[@]}"; do
