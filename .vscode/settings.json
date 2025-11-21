@@ -16,8 +16,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": false
   },
-  "bracket-pair-colorizer-2.depreciation-notice": false,
-  "breadcrumbs.enabled": false,
+
+  "breadcrumbs.enabled": true,
   "editor.accessibilitySupport": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 16,
@@ -78,15 +78,16 @@
     "*.toc"
   ],
   "redhat.telemetry.enabled": false,
-  "sql-formatter.uppercase": true,
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.tree.indent": 25,
+  "workbench.tree.indent": 20,
   "editor.stickyScroll.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": false,
   "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "gitlens.ai.vscode.model": "copilot:gpt-5",
   "workbench.sideBar.location": "right",
-  "terminal.integrated.fontSize": 15
+  "terminal.integrated.fontSize": 15,
+  "python.createEnvironment.trigger": "off",
+  "notebook.lineNumbers": "on"
 }

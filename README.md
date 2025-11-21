@@ -26,7 +26,20 @@ and `stow`
 ```sh
 brew install stow
 ```
+
+## Create symlinks
 In the repository execute:
 ```sh
 stow .
+```
+
+In the .vscode directory stow in the user settings:
+```sh
+cd .vscode
+stow -t ~/Library/Application\ Support/Code/User .
+```
+
+## Install Applications using install.sh
+```sh
+sh scripts/install.sh
 ```
