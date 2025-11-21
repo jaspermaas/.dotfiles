@@ -31,3 +31,15 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock minimize-to-application -bool true
 killall Dock
+
+
+# Maccy Settings
+echo "Configuring Maccy Settings..."
+defaults write org.p0deje.Maccy pasteByDefault -bool true
+defaults write org.p0deje.Maccy showInStatusBar -bool false
+defaults write org.p0deje.Maccy windowSize -string "[400,600]"
+defaults write org.p0deje.Maccy menuIcon -string "clipboard"
+defaults write org.p0deje.Maccy KeyboardShortcuts_delete -int 0
+defaults write org.p0deje.Maccy KeyboardShortcuts_pin -int 0
+defaults write org.p0deje.Maccy KeyboardShortcuts_popup -string "{\"carbonKeyCode\":9,\"carbonModifiers\":768}"
+
