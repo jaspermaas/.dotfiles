@@ -1,4 +1,6 @@
 # !/bin/bash
+# Script to install applications and tools using Homebrew and mas
+# Author: Hannes Jasper Maas
 
 # Install Homebrew if not already installed
 if ! command -v brew &> /dev/null
@@ -18,6 +20,7 @@ echo "Cleaning up old versions..."
 brew cleanup
 
 # Install casks
+echo "Installing casks using Homebrew"
 CASKS=(
     "visual-studio-code"
     "ghostty"
@@ -27,6 +30,7 @@ CASKS=(
     "rectangle"
     "jandedobbeleer/oh-my-posh/oh-my-posh"
     "alt-tab"
+    "docker-desktop"
 )
 
 for CASK in "${CASKS[@]}"; do
@@ -38,6 +42,7 @@ for CASK in "${CASKS[@]}"; do
 done
 
 # Install formulae
+echo "Installing formulae using Homebrew"
 FORMULAE=(
     "jenv"
     "pyenv"
@@ -56,7 +61,7 @@ done
 brew cleanup
 
 # Install Mac App Store apps using mas
-# Numbers, Keynote, Pages, Dashlane
+echo "Installing Mac App Store apps using mas"
 MAS_APPS=(
     409203825   # Numbers
     409183694   # Keynote
@@ -75,18 +80,20 @@ then
     done
 fi
 
+# Install Python 3 using pyenv
 echo "Installing python 3 using pyenv"
 pyenv install 3
 pyenv global 3
 
 echo "Installing jenv"
 JAVA_VERSIONS=(
-    "8"
     "17"
     "21"
     "25"
 )
 
+# Install Java versions and add them to jenv
+echo "Installing Java versions and add them to jenv"
 for JAVA_VERSION in "${JAVA_VERSIONS[@]}"; do
     if jenv versions | grep -q "$JAVA_VERSION"; then
         echo "Java $JAVA_VERSION is already installed."
@@ -101,6 +108,7 @@ for JAVA_VERSION in "${JAVA_VERSIONS[@]}"; do
 done
 
 # Install VS Code extensions
+echo "Installing VS Code extensions"
 VSCODE_EXTENSIONS=(
     "ms-python.python"
     "docker.docker"
@@ -120,4 +128,5 @@ for EXTENSION in "${VSCODE_EXTENSIONS[@]}"; do
     fi
     code --install-extension "$EXTENSION"
 done
+echo "Installation script completed."
 
