@@ -10,10 +10,12 @@ xcode-select --install
 
 ## Installation
 
-First, clone this repository into your `~`-Folder:
+Register your ssh-key with github.com
+
+Then clone this repository into your `~`-Folder:
 ```sh
 cd ~
-git clone https://www.github,com/jaspermaas/.dotfiles
+git clone git@github.com:jaspermaas/.dotfiles.git
 ```
 
 Then install `homebrew`
