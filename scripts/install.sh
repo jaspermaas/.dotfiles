@@ -60,26 +60,6 @@ done
 
 brew cleanup
 
-# Install Mac App Store apps using mas
-echo "Installing Mac App Store apps using mas"
-MAS_APPS=(
-    409203825   # Numbers
-    409183694   # Keynote
-    409201541   # Pages
-    517914548   # Dashlane
-)
-
-if command -v mas &> /dev/null
-then
-    for APP_ID in "${MAS_APPS[@]}"; do
-        if mas list | grep -q "$APP_ID"; then
-            echo "App with ID $APP_ID is already installed."
-            continue
-        fi
-        mas install "$APP_ID"
-    done
-fi
-
 # Install Python 3 using pyenv
 echo "Installing python 3 using pyenv"
 pyenv install 3
