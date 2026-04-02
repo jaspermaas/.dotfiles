@@ -77,7 +77,7 @@
   ],
   "redhat.telemetry.enabled": false,
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Dark+",
+  "workbench.preferredDarkColorTheme": "Dark Modern",
   "workbench.editor.empty.hint": "hidden",
   "workbench.tree.indent": 20,
   "editor.stickyScroll.enabled": false,
