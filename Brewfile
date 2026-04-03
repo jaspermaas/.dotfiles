@@ -7,8 +7,6 @@ brew "jenv"
 brew "lazygit"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Mac App Store command-line interface
-brew "mas"
 # Development kit for the Java programming language
 brew "openjdk"
 # Development kit for the Java programming language
@@ -47,11 +45,6 @@ cask "spotify"
 cask "sublime-merge"
 # Open-source code editor
 cask "visual-studio-code"
-mas "Dashlane", id: 517914548
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "OneDrive", id: 823766827
-mas "Pages", id: 409201541
 vscode "docker.docker"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
