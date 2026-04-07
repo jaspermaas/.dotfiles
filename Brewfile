@@ -7,6 +7,10 @@ brew "jenv"
 brew "lazygit"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
 # Development kit for the Java programming language
 brew "openjdk"
 # Development kit for the Java programming language
@@ -19,16 +23,23 @@ brew "pyenv"
 brew "stow"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Display management tool
+cask "betterdisplay"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
+cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
 # HTTP and GraphQL Client
 cask "insomnia"
+# System monitoring app
+cask "istat-menus"
+# Discover, download, and run local LLMs
+cask "lm-studio"
 # Clipboard manager
 cask "maccy"
 # Prompt theme engine for any shell
