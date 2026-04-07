@@ -83,7 +83,9 @@
   "editor.stickyScroll.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": false,
   "workbench.sideBar.location": "right",
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "python.createEnvironment.trigger": "off",
+  "git.openRepositoryInParentFolders": "always",
   "notebook.lineNumbers": "on"
 }
