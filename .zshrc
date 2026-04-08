@@ -39,3 +39,5 @@ export PATH="$PATH:/Users/jasper/.lmstudio/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
 [ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"
+
+export HOMEBREW_NO_ENV_HINTS=1
