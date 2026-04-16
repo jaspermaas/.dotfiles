@@ -1,6 +1,9 @@
 tap "jandedobbeleer/oh-my-posh"
+tap "teamookla/speedtest"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Functional programming language for building browser-based GUIs
+brew "elm"
 # Manage your Java environment
 brew "jenv"
 # Simple terminal UI for git commands
@@ -21,6 +24,10 @@ brew "openjdk@21"
 brew "pyenv"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# ISO/Edinburgh-style Prolog interpreter
+brew "swi-prolog"
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Display management tool
@@ -50,15 +57,20 @@ cask "orbstack"
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
 # Music streaming service
 cask "spotify"
 # Git client
 cask "sublime-merge"
 # Open-source code editor
 cask "visual-studio-code"
+vscode "arthurwang.vsc-prolog"
 vscode "docker.docker"
 vscode "eamodio.gitlens"
+vscode "elmtooling.elm-ls-vscode"
 vscode "esbenp.prettier-vscode"
+vscode "hbenl.vscode-test-explorer"
 vscode "github.copilot-chat"
 vscode "inferrinizzard.prettier-sql-vscode"
 vscode "james-yu.latex-workshop"
@@ -74,6 +86,7 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.live-server"
 vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.test-adapter-converter"
 vscode "redhat.java"
-vscode "tomoki1207.pdf"

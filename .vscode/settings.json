@@ -87,5 +87,11 @@
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "python.createEnvironment.trigger": "off",
   "git.openRepositoryInParentFolders": "always",
-  "notebook.lineNumbers": "on"
+  "prolog.executablePath": "/opt/homebrew/bin/swipl",
+  "notebook.lineNumbers": "on",
+  "update.showReleaseNotes": false,
+  "[elm]": {
+    "editor.defaultFormatter": "elmTooling.elm-ls-vscode",
+    "editor.formatOnSave": true
+  }
 }
