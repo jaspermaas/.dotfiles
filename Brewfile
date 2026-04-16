@@ -49,6 +49,8 @@ cask "istat-menus"
 cask "lm-studio"
 # Clipboard manager
 cask "maccy"
+# Full TeX Live distribution with GUI applications
+cask "mactex"
 # Prompt theme engine for any shell
 cask "jandedobbeleer/oh-my-posh/oh-my-posh"
 # Replacement for Docker Desktop
@@ -70,8 +72,8 @@ vscode "docker.docker"
 vscode "eamodio.gitlens"
 vscode "elmtooling.elm-ls-vscode"
 vscode "esbenp.prettier-vscode"
-vscode "hbenl.vscode-test-explorer"
 vscode "github.copilot-chat"
+vscode "hbenl.vscode-test-explorer"
 vscode "inferrinizzard.prettier-sql-vscode"
 vscode "james-yu.latex-workshop"
 vscode "ms-python.autopep8"
