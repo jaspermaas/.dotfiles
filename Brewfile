@@ -4,12 +4,14 @@ tap "teamookla/speedtest"
 brew "btop"
 # Functional programming language for building browser-based GUIs
 brew "elm"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Official GitLab CI runner
+brew "gitlab-runner"
 # Manage your Java environment
 brew "jenv"
 # Simple terminal UI for git commands
 brew "lazygit"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Manage multiple Node.js versions
