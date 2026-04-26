@@ -1,4 +1,5 @@
 tap "jandedobbeleer/oh-my-posh"
+tap "stanmarek/tap"
 tap "teamookla/speedtest"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
@@ -28,6 +29,8 @@ brew "pyenv"
 brew "stow"
 # ISO/Edinburgh-style Prolog interpreter
 brew "swi-prolog"
+# Terminal-native autocomplete engine using PTY proxying for macOS terminals
+brew "stanmarek/tap/ghost-complete"
 # Ookla Speedtest
 brew "teamookla/speedtest/speedtest"
 # Enable Windows-like alt-tab

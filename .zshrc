@@ -1,3 +1,12 @@
+# >>> ghost-complete initialize >>>
+# !! Contents within this block are managed by 'ghost-complete install' !!
+if [[ -f '/Users/jasper/.config/ghost-complete/shell/init.zsh' ]]; then
+  builtin source '/Users/jasper/.config/ghost-complete/shell/init.zsh'
+else
+  echo "ghost-complete: init script missing: "'/Users/jasper/.config/ghost-complete/shell/init.zsh' >&2
+  echo "ghost-complete: run 'ghost-complete install' to restore it" >&2
+fi
+# <<< ghost-complete initialize <<<
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
@@ -46,3 +55,7 @@ export HOMEBREW_BUNDLE_FILE_GLOBAL="~/.dotfiles/Brewfile"
 
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+# >>> ghost-complete shell integration >>>
+# !! Contents within this block are managed by 'ghost-complete install' !!
+source '/Users/jasper/.config/ghost-complete/shell/ghost-complete.zsh'
+# <<< ghost-complete shell integration <<<
