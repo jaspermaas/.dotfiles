@@ -44,3 +44,5 @@ export HOMEBREW_NO_ENV_HINTS=1
 
 export HOMEBREW_BUNDLE_FILE_GLOBAL="~/.dotfiles/Brewfile"
 
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
