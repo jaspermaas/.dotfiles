@@ -3,4 +3,6 @@ README.md
 scripts
 .gitignore
 .DS_Store
+<!-- not stowed under ~ -->
 .vscode
+.latex

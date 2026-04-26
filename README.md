@@ -55,7 +55,14 @@ cd ~/.dotfiles/.vscode
 stow -t ~/Library/Application\ Support/Code/User .
 ```
 
-## Install Applications using install.sh
+### Stow the Latex Classes
+In the .latex directory stow the latex classes:
 ```sh
-sh ~/.dotfiles/scripts/install.sh
+cd ~/.dotfiles/.latex
+stow -t ~/Library/texmf/tex/latex/local .
+```
+
+## Install Applications using brew
+```sh
+brew bundle --file=~/.dotfiles/Brewfile
 ```
