@@ -41,8 +41,6 @@ cask "docker-desktop"
 cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Free and open-source image editor
-cask "gimp"
 # HTTP and GraphQL Client
 cask "insomnia"
 # System monitoring app

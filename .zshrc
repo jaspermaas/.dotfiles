@@ -41,3 +41,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"
 
 export HOMEBREW_NO_ENV_HINTS=1
+
+export HOMEBREW_BUNDLE_FILE_GLOBAL="~/.dotfiles/Brewfile"
+

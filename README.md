@@ -64,5 +64,5 @@ stow -t ~/Library/texmf/tex/latex/local .
 
 ## Install Applications using brew
 ```sh
-brew bundle --file=~/.dotfiles/Brewfile
+brew bundle --global
 ```
