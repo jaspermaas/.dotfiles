@@ -1,21 +1,5 @@
 {
-  "[bibtex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
-    "editor.formatOnSave": true
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java",
-    "editor.suggest.snippetsPreventQuickSuggestions": false
-  },
-  "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop",
-    "editor.wordWrap": "on"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": false
-  },
+  // General Settings
   "editor.accessibilitySupport": "off",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 16,
@@ -26,21 +10,64 @@
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.factorypath": true,
-    "**/.project": true,
-    "**/.settings": true
-  },
-  "git.autofetch": true,
-  "git.confirmSync": false,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Dark Modern",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.indent": 24,
+  "editor.stickyScroll.enabled": false,
+  "workbench.sideBar.location": "right",
+  "update.showReleaseNotes": false,
+
+  // Integrated Terminal Settings
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
+  // Copilot Settings
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
     "plaintext": false,
     "scminput": false
   },
+  "github.copilot.nextEditSuggestions.enabled": false,
+
+  // Git Settings
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+
+  // Java Settings
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+  "redhat.telemetry.enabled": false,
+
+  // Python Settings
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.project": true,
+    "**/.settings": true
+  },
   "jupyter.askForKernelRestart": false,
+  "notebook.lineNumbers": "on",
+  "python.createEnvironment.trigger": "off",
+
+  // Latex Settings
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": true
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.wordWrap": "on"
+  },
   "latex-workshop.bibtex-fields.order": ["author", "year", "month", "title"],
   "latex-workshop.bibtex-fields.sort.enabled": true,
   "latex-workshop.bibtex-format.sort.enabled": true,
@@ -48,50 +75,56 @@
   "latex-workshop.bibtex.maxFileSize": 10,
   "latex-workshop.latex.autoBuild.interval": 500,
   "latex-workshop.latex.autoBuild.run": "onSave",
-  "latex-workshop.latex.build.forceRecipeUsage": false,
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk",
-    "*.snm",
-    "*.synctex(busy)",
-    "*.synctex.gz(busy)",
-    "*.nav",
-    "*.vrb",
-    "*.synctex.gz",
-    "*.aux",
-    "*.toc"
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "lua",
+      "tools": [
+        "lualatex",
+        "lualatex"
+      ]
+    },
+    {
+      "name": "Lua + BibTeX",
+      "tools": [
+        "lualatex",
+        "biber",
+        "lualatex",
+        "lualatex"
+      ]
+    }
   ],
-  "redhat.telemetry.enabled": false,
-  "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Dark Modern",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.tree.indent": 20,
-  "editor.stickyScroll.enabled": false,
-  "github.copilot.nextEditSuggestions.enabled": false,
-  "workbench.sideBar.location": "right",
-  "terminal.integrated.fontSize": 17,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "python.createEnvironment.trigger": "off",
-  "git.openRepositoryInParentFolders": "always",
-  "prolog.executablePath": "/opt/homebrew/bin/swipl",
-  "notebook.lineNumbers": "on",
-  "update.showReleaseNotes": false,
+  "latex-workshop.latex.tools":[
+    {
+      "name": "lualatex",
+      "command": "lualatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-lualatex",
+        "-outdir=%OUTDIR%",
+        "-synctex=0",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.autoClean.run": "onSucceeded",
+
+  // Misc Settings
   "[elm]": {
     "editor.defaultFormatter": "elmTooling.elm-ls-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "prolog.executablePath": "/opt/homebrew/bin/swipl",
+
+
+  // Not yet categorized settings (e.g. recently added by vscode or extensions)
 }
