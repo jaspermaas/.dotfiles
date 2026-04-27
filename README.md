@@ -45,20 +45,20 @@ git clone git@github.com:jaspermaas/.dotfiles.git
 ### Stow the dotfiles
 ```sh
 cd ~/.dotfiles
-stow .
+stow --dotfiles .
 ```
 
 ### Stow VSCode User Settings
-In the .vscode directory stow in the user settings:
+In the vscode directory stow in the user settings:
 ```sh
-cd ~/.dotfiles/.vscode
+cd ~/.dotfiles/vscode
 stow -t ~/Library/Application\ Support/Code/User .
 ```
 
 ### Stow the Latex Classes
-In the .latex directory stow the latex classes:
+In the latex directory stow the latex classes:
 ```sh
-cd ~/.dotfiles/.latex
+cd ~/.dotfiles/latex
 stow -t ~/Library/texmf/tex/latex/local .
 ```
 
