@@ -125,6 +125,9 @@
     "editor.formatOnSave": true
   },
   "prolog.executablePath": "/opt/homebrew/bin/swipl",
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 
 
   // Not yet categorized settings (e.g. recently added by vscode or extensions)
