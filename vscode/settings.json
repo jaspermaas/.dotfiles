@@ -40,7 +40,8 @@
   // Java Settings
   "[java]": {
     "editor.defaultFormatter": "redhat.java",
-    "editor.suggest.snippetsPreventQuickSuggestions": false
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.formatOnSave": true
   },
   "redhat.telemetry.enabled": false,
 
@@ -59,6 +60,7 @@
   "jupyter.askForKernelRestart": false,
   "notebook.lineNumbers": "on",
   "python.createEnvironment.trigger": "off",
+  "python-envs.defaultEnvManager": "ms-python.python:pyenv",
 
   // Latex Settings
   "[bibtex]": {
@@ -76,6 +78,7 @@
   "latex-workshop.bibtex.maxFileSize": 10,
   "latex-workshop.latex.autoBuild.interval": 500,
   "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.formatting.latex":"tex-fmt",
   "latex-workshop.latex.recipes": [
     {
       "name": "lua",
@@ -125,10 +128,13 @@
     "editor.formatOnSave": true
   },
   "prolog.executablePath": "/opt/homebrew/bin/swipl",
+  "[prolog]": {
+    "editor.defaultFormatter": "arthurwang.vsc-prolog"
+  },
   "[snippets]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-
-
+  "explorer.confirmPasteNative": false,
+  "diffEditor.ignoreTrimWhitespace": false
   // Not yet categorized settings (e.g. recently added by vscode or extensions)
 }
