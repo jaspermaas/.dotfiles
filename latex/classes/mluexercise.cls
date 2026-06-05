@@ -384,6 +384,7 @@
     \ifthenelse{\boolean{mluexercise@showtitle}}{\maketitle}{} % Print lecture name, date, semester, group.
 }
 
+% Font substitutions:
 \DeclareFontShape{TU}{lmss}{sb}{n}{<->ssub*lmss/b/n}{}
 \DeclareFontShape{TU}{lmss}{b}{sc}{<->ssub*lmss/b/n}{}
 \DeclareFontShape{TU}{lmss}{bx}{sc}{<->ssub*lmss/bx/n}{}
@@ -391,3 +392,6 @@
 \DeclareFontShape{TU}{lmss}{sb}{sc}{<->ssub*lmss/sb/n}{}
 \DeclareFontShape{TU}{lmss}{sb}{scit}{<->ssub*lmss/sb/n}{}
 
+
+% Parskip medium:
+\setlength{\parskip}{\medskipamount}
